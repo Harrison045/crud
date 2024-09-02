@@ -14,7 +14,7 @@ function UserItem(props) {
 
   const [showModale, setShowModal] = useState(false)
 
-  const handleOpen = () =>{
+  const handleOpe = () =>{
     setShowModal(true)
   }
   const handleClose = () =>{
@@ -26,7 +26,7 @@ function UserItem(props) {
       <h1 className="text-2xl">{props.details.name}</h1>
       <h6>{props.details.email}</h6>
 
-      <Button onClick={handleOpen}>Edit</Button>
+      <Button onClick={handleOpe}>Edit</Button>
       <Button color="red">Delete</Button>
 
       <Dialog
